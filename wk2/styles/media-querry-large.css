@@ -1,0 +1,39 @@
+/* Default styles for large screens */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #0d3c58;
+    size: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #1d4e36;
+}
+
+
+/* Media query for screens 500px and larger */
+@media screen and (min-width: 500px) {
+    header {
+        background-color: #212121;
+        color: #ffffff;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
