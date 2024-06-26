@@ -1,0 +1,104 @@
+
+:root {
+    --primary-color: #1d472a;
+    --secondary-color: #046822;
+    --accent-color: #e6d006;
+    --highlight-color: #1cb5cd;
+    --background-color: #ffffff;
+    --text-color: #000000;
+}    
+*{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+header h1{
+    display: inline-flex;
+    padding-right: 2rem;
+    top: 1rem;
+}
+
+#menu {
+	display: inline-flex;
+	font-size: 2.5rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .65rem;
+	color: var(--text-color);
+    align-self: center;
+    background-color: var(--primary-color);
+}
+
+
+
+#menu::before {
+	content: "≡";
+}
+
+
+#menu.show::before{
+    content: "✖";
+}
+
+nav{
+    display: none;
+} 
+
+nav.show{
+    display: block;
+}
+
+nav.show a{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 20px;
+}
+
+nav.show a:hover{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+main h1{
+    padding-top: 16px;
+    font-size: 24px;
+    color: var(--text-color);
+
+}
+
+.temples-grid{
+    display: block;
+    padding: 16px;
+}
+
+.temple-image img{
+    padding: 16px;
+    width: 90%;
+    border-radius: 26px;
+}
+
+figcaption{
+    text-align: center;
+    font-family: italic;
+    font-weight: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+#lastModified{
+    color: var(--text-color);
+    font-size: 12px;
+}
